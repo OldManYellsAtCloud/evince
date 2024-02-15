@@ -1,3 +1,20 @@
+# What's this
+This repository is a copy of the Evince source repository. There is 1 small change though.
+
+You know that annoying preview popover that covers half of the screen when you hover over a link? It drove me mad constantly. So that thing does not exist in this version.
+
+To install:
+
+1. Uninstall evince
+2. Clone this repo, and run this:
+
+```
+meson setup --prefix /usr builddir/
+cd builddir
+ninja
+sudo meson install
+```
+
 # ![evince-logo] Evince
 
 Evince is a document viewer capable of displaying multiple and single
